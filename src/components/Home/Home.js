@@ -1,8 +1,19 @@
-import React from 'react'
+import React from 'react';
+
+import NewsSlider from '../Widgets/NewsSlider/NewsSlider';
 
 const Home = () => {
   return (
-    <h1>home</h1>
+    <div>
+      <NewsSlider 
+        type="featured"
+        start={3}
+        amount={6}
+        settings={{
+          dots: false
+        }}
+      />
+    </div>
   )
 }
 
